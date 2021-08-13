@@ -408,6 +408,9 @@ if [ -n "${CONFIG_BUILDTIME_TABLE_SORT}" ]; then
 	fi
 fi
 
+info TFTP vmlinux
+cp vmlinux ${tftpboot}
+
 info SYSMAP System.map
 mksysmap vmlinux System.map
 
