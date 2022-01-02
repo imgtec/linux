@@ -7,11 +7,9 @@
 	model = "Loongson LS1C300 evaluation board";
 	compatible = "loongson,ls1c300-eval-board", "loongson,ls1c300-soc";
 
-	&apb {
-	//	pinctrl-names = "default";
-	//	pinctrl-0 = <&pinctrl_uart2>;
-		status = "okay";
-	};
+        sdram: memory@0 {
+                reg = <0x00000000 0x4000000>;
+        };
 
 	chosen {
 		bootargs = "console=ttyS2,115200n8 root=/dev/ram0 rw mem=64m init=linuxrc";

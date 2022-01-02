@@ -18,13 +18,8 @@
 		#address-cells = <1>;
 		#size-cells = <1>;
 
-		sdram: memory@0 {
-			reg = <0x00000000 0x10000000>;
-		};
-
 		dc: lcd-controller@1c300000 {
 			reg = <0x1c300000 0x400000>;
-
 		};
 	};
 
