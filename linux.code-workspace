@@ -1,0 +1,93 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"aaaaaaaaaaaaaaaa": true,
+			"**/*.order": true,
+			"**/.*": true,
+			"**/*.a": true,
+			"**/*.asn1.[ch]": true,
+			"**/*.bin": true,
+			"**/*.bz2": true,
+			"**/*.c.[012]*.*": true,
+			"**/*.dt.yaml": true,
+			"**/*.dtb": true,
+			"**/*.dtbo": true,
+			"**/*.dtb.S": true,
+			"**/*.dwo": true,
+			"**/*.elf": true,
+			"**/*.gcno": true,
+			"**/*.gz": true,
+			"**/*.i": true,
+			"**/*.ko": true,
+			"**/*.lex.c": true,
+			"**/*.ll": true,
+			"**/*.lst": true,
+			"**/*.lz4": true,
+			"**/*.lzma": true,
+			"**/*.lzo": true,
+			"**/*.mod": true,
+			"**/*.mod.c": true,
+			"**/*.o": true,
+			"**/*.o.*": true,
+			"**/*.patch": true,
+			"**/*.s": true,
+			"**/*.so": true,
+			"**/*.so.dbg": true,
+			"**/*.su": true,
+			"**/*.symtypes": true,
+			"**/*.symversions": true,
+			"**/*.tab.[ch]": true,
+			"**/*.tar": true,
+			"**/*.xz": true,
+			"**/*.zst": true,
+			"**/Module.symvers": true,
+			"**/modules.order": true,
+			"bbbbbbbbbbbbbbbbbbb": true
+		},
+		"editor.tabSize": 8,
+		"editor.insertSpaces": false,
+		"C_Cpp.default.forcedInclude": [
+			"${workspaceFolder}/include/linux/kconfig.h",
+			"${workspaceFolder}/include/linux/compiler-version.h"
+		],
+		"C_Cpp.default.includePath": [
+			"${workspaceFolder}/**",
+			"${workspaceFolder}/arch/mips/include",
+			"${workspaceFolder}/arch/mips/include/generated",
+			"${workspaceFolder}/include",
+			"${workspaceFolder}/arch/mips/include/uapi",
+			"${workspaceFolder}/arch/mips/include/generated/uapi",
+			"${workspaceFolder}/include/uapi",
+			"${workspaceFolder}/include/generated/uapi",
+			"${workspaceFolder}"
+		],
+		"C_Cpp.default.defines": [
+			"__linux__",
+			"linux",
+			"__STDC__",
+			"unix",
+			"__unix__",
+			"__KERNEL__"
+		],
+		"C_Cpp.default.compilerArgs": [
+			"-Wall",
+			"-Wundef",
+			"-Werror=strict-prototypes",
+			"-Wno-trigraphs",
+			"-fno-strict-aliasing",
+			"-fno-common",
+			"-fshort-wchar",
+			"-fno-PIE",
+			"-Werror=implicit-function-declaration",
+			"-Werror=implicit-int",
+			"-Werror=return-type",
+			"-Wno-format-security",
+			"-std=gnu89"
+		]
+	}
+}
