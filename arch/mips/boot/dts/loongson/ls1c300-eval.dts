@@ -7,6 +7,11 @@
 	model = "Loongson LS1C300 evaluation board";
 	compatible = "loongson,ls1c300-eval-board", "loongson,ls1c300-soc";
 
+	osc: oscillator {
+		compatible = "fixed-clock";
+		clock-frequency = <24000000>;
+	};
+
         sdram: memory@0 {
                 reg = <0x00000000 0x4000000>;
         };
