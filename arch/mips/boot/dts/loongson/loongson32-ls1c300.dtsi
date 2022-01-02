@@ -1,0 +1,64 @@
+// SPDX-License-Identifier: GPL-2.0
+/ {
+	#address-cells = <1>;
+	#size-cells = <1>;
+	compatible = "loongson,ls1c300-soc";
+
+	cpus {
+		cpu@0 {
+			compatible = "loongson,gs232";
+		};
+	};
+
+	cpuintc: interrupt-controller {
+		compatible = "mti,cpu-interrupt-controller";
+	};
+
+	axi: bus@0 {
+		#address-cells = <1>;
+		#size-cells = <1>;
+
+		sdram: memory@0 {
+			reg = <0x00000000 0x10000000>;
+		};
+
+		dc: lcd-controller@1c300000 {
+			reg = <0x1c300000 0x400000>;
+
+		};
+	};
+
+	aximux: bus@1d000000 {
+		#address-cells = <1>;
+		#size-cells = <1>;
+
+		confreg: syscon@1fd00000 {
+			reg = <0x1fd00000 0x2000>;
+		};
+	};
+
+	apb: bus@1fe40000 {
+		#address-cells = <1>;
+		#size-cells = <1>;
+
+		serial@1fe40000 {
+			compatible = "loongson,ls1c300-uart";
+			reg = <0x1fe40000 0x10>;
+		};
+
+		serial@1fe44000 {
+			compatible = "loongson,ls1c300-uart";
+			reg = <0x1fe44000 0x10>;
+		};
+
+		uart2: serial@1fe48000 {
+			compatible = "loongson,ls1c300-uart";
+			reg = <0x1fe48000 0x10>;
+		};
+
+		serial@1fe4c000 {
+			compatible = "loongson,ls1c300-uart";
+			reg = <0x1fe4c000 0x10>;
+		};
+	};
+};
