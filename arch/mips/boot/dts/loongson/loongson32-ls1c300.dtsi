@@ -27,8 +27,17 @@
 		#address-cells = <1>;
 		#size-cells = <1>;
 
+		pll: clock-controller@1fe78030 {
+			compatible = "loongson,ls1c300-clk";
+			reg = <0x1fe78030 0x1000>;
+			clocks = <&osc>;
+			clock-output-names = "pll";
+		};
+
 		confreg: syscon@1fd00000 {
+			compatible = "loongson,syscon";
 			reg = <0x1fd00000 0x2000>;
+			clocks = <&osc 0>;
 		};
 	};
 

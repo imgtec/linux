@@ -8,6 +8,7 @@
 	compatible = "loongson,ls1c300-eval-board", "loongson,ls1c300-soc";
 
 	osc: oscillator {
+		#clock-cells = <0>;
 		compatible = "fixed-clock";
 		clock-frequency = <24000000>;
 	};
